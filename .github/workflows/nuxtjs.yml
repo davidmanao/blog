@@ -52,8 +52,7 @@ jobs:
           version: 8
           run_install: |
             - recursive: true
-              args: [--frozen-lockfile, --strict-peer-dependencies]
-            - args: [--global, gulp, prettier, typescript]
+            - args: [--global, nuxt, typescript]
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
