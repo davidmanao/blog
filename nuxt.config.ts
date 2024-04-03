@@ -14,7 +14,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     '@nuxt/content',
-    "@nuxt/image"
+    "@nuxt/image",
+    "nuxt-gtag"
   ],
   colorMode: {
     classSuffix: "",
@@ -33,4 +34,7 @@ export default defineNuxtConfig({
       }
     }
   },
+  gtag:{
+    id: "G-0H6W17YX7W"
+  }
 })
