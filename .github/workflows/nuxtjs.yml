@@ -19,7 +19,8 @@ permissions:
   id-token: write
 
 jobs:
-  build_and_deploy:
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -53,6 +54,11 @@ jobs:
         run: pnpm install
       - name: Static HTML export with Nuxt
         run: pnpm run build
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to Firebase
         uses:  w9jds/firebase-action@master
         with:
