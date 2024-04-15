@@ -161,6 +161,7 @@
               class="
                 px-4
                 py-2.5
+                invisible
                 text-white
                 tracking-wider
                 bg-indigo-500
