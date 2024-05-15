@@ -9,7 +9,7 @@ const { post, authorDetails, next, prev } = defineProps([
 const siteMetadata = useAppConfig().metadata;
 
 const editUrl = (fileName: any) =>
-  `${siteMetadata.siteRepo}/blob/master/content/${fileName}`;
+  `${siteMetadata.github}/blob/master/content/${fileName}`;
 const discussUrl = (slug: any) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
     `${siteMetadata.siteUrl}/blog/${slug}`

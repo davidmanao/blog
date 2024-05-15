@@ -32,6 +32,6 @@ export default <Partial<Config>>{
       pattern: /bg-+/     // Optional
     },
   ],
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }
 
