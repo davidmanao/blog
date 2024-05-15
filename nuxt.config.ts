@@ -35,6 +35,6 @@ export default defineNuxtConfig({
     }
   },
   gtag:{
-    id: "G-0H6W17YX7W"
+    id: process.env.GTAG
   }
 })

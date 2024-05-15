@@ -60,4 +60,5 @@ jobs:
           args: deploy
         env:
           FIREBASE_TOKEN: '${{ secrets.FIREBASE_TOKEN }}'
-          PROJECT_ID: davidmanaoweb
+          PROJECT_ID: '${{ secrets.GCP_PROJECT_ID }}'
+          GTAG: '${{ secrets.GTAG }}'
