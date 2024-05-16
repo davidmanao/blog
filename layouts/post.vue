@@ -27,7 +27,7 @@ const postDateTemplate: Record<string, string> = {
     <ScrollTopAndComment />
     <article>
       <div
-        class="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700 text-slate-900 dark:text-white"
+        class="xl:divide-y dark:bg-green-600 xl:divide-gray-200 xl:dark:divide-gray-700 text-slate-900 dark:text-white"
       >
         <header class="pt-6 xl:pb-6">
           <div class="space-y-1 text-center">
